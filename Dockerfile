@@ -9,7 +9,7 @@ WORKDIR /tmp/
 
 RUN git clone https://github.com/riscv/riscv-gnu-toolchain
 
-RUN cd riscv-gnu-toolchain
+WORKDIR /tmp/riscv-gnu-toolchain
 
 RUN ./configure --prefix=/opt/riscv
 
