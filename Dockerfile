@@ -17,4 +17,6 @@ RUN make
 
 RUN export PATH=$PATH:/opt/riscv/bin
 
+RUN rm -rf /tmp/riscv-gnu-toolchain
+
 CMD ["/bin/bash"]
